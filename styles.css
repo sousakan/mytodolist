@@ -1,0 +1,179 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background: rgb(2,0,36);
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(75,75,167,1) 35%, rgba(0,212,255,1) 100%);
+    min-height: 100vh;
+
+    
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.content
+{
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-title
+{
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.content-form
+{
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.form-text,
+.form-button
+{
+    border: none;
+    outline: none;
+}
+
+.form-text
+{
+    font-size: 2rem;
+
+    width: 80%;
+
+    padding-left: 1rem;
+}
+
+.form-button
+{
+    background-color: #fff;
+    color: rgb(49 122 197);
+    font-size: 2rem;
+    
+    transition: all .2s linear;
+    cursor: pointer;
+
+    padding: 5px 10px;
+}
+
+.form-button:hover
+{
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+/* ============ Todo Element ============ */
+
+.content-todos
+{
+    min-width: 25%;
+}
+
+.todo
+{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.todo-text
+{
+    flex: 1;
+
+    background-color: #fff;
+    color: #000;
+
+    padding-top: 7px;
+    padding-left: 10px;
+}
+
+.todo-mark-button,
+.todo-delete-button
+{
+    border: none;
+    outline: none;
+    color: #fff;
+
+    padding: 1rem;
+
+    cursor: pointer;
+}
+
+.todo-mark-button
+{
+    background-color: rgb(73, 204, 73);
+}
+
+.todo-delete-button
+{
+    background-color: #ff6f47;
+}
+
+.marked-todo
+{
+    opacity: 0.5;
+
+    transition: all .2s ease;
+}
+
+.marked-todo .todo-text
+{
+    text-decoration: line-through;
+}
+
+.fa-check,
+.fa-trash,
+.fa-sort-down
+{
+    pointer-events: none;
+}
+
+.fall-animation
+{
+    transform: translateY(200px) rotateZ(30deg);
+    opacity: 0;
+
+    transition: transform .5s, opacity .5s;
+}
+
+.form-sort
+{
+    border: none;
+    outline: none;
+
+    background-color: #fff;
+    color: rgb(49 122 197);
+    font-size: 1rem;
+    
+    transition: all .2s linear;
+    cursor: pointer;
+
+    padding: 0 15px;
+    margin-left: 1rem;
+}
+
+.form.sort
+{
+    text-align: center;
+}
+
+.form-sort option[value=""][disabled]
+{
+    display: none;
+}
+
